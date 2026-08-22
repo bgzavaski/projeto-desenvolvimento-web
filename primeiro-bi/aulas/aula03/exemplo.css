@@ -1,0 +1,18 @@
+#home {
+    background-color: aliceblue;
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: violet;
+    text-decoration: underline;
+}
+
+.home-content {
+    background-color: chocolate;
+}
+
+div p {
+    color: yellow;
+}

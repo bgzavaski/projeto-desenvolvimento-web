@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: bisque;
+}
+
+.relative {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border: solid white 12px;
+    position: relative;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.absolute {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border: solid white 12px;
+    position: absolute;
+    right: 0;
+}
+
+.fixed {
+    width: 200px;
+    height: 200px;
+    background-color: yellow ;
+    border: solid white 12px;
+    position: fixed;
+    right: 0;
+}
