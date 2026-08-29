@@ -1,0 +1,188 @@
+.titulo-site {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #212529;
+}
+h1, h2, h3 {
+    color: #212529;
+}
+.titulo-site img {
+    width: 50px;
+    height: 50px;
+}
+
+
+body { 
+    background-color: whitesmoke;    
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+    gap: 30px;
+    max-width: 1400px;
+
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        padding: 0 15px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    aside {
+        width: 100%;
+    }
+
+}
+
+header {
+    grid-area: header;
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 35px;
+    background-color: #bdbbb6;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+main {
+    grid-area: main;
+    padding: 0 30px;
+}
+
+aside {
+    grid-area: aside;
+}
+ 
+article h2 {
+    color: #212529
+}
+
+p { 
+    color: #212529;
+}
+
+aside section {
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    border-left: 5px solid #bdbbb6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 20px;
+    
+}
+
+aside h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.25rem;
+}
+
+aside li {
+    list-style: none;
+    border-bottom: 1px solid #bdbbb6;
+}
+
+aside li:last-child {
+    border-bottom: none;
+}
+
+aside a {
+    display: flex;
+
+    padding: 12px 5px;
+    text-decoration: none;
+    color: #3f3f3f;
+    transition: 0.3s;
+}
+
+aside a:hover {
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+aside ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: flex;
+    color: #020202;
+    text-decoration: none;
+    background-color: rgb(233, 231, 231);  
+    border: 1px solid #aaa9a9;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #d5d4d4;
+    transition: transform 0.3s;
+    transform: scale(1.07);
+}
+
+article {   
+    background-color: white;
+    border: 1px solid #F2F0EA;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+article img {
+    width: 100%;
+    height:auto;
+    display: block;
+    border-radius: 12px;
+}
+
+article figcaption {
+    margin-top: 5px;
+    color: #3f3f3f;
+    font-size: small;
+}
+
+figure {
+    margin: 0px;
+}
+
+footer p {
+    text-align: center;
+}
