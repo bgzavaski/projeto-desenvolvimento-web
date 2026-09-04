@@ -1,0 +1,10 @@
+#container {
+    height: 100dvh;
+    background-color: aqua;
+}
+
+.content {
+    height: 200px;
+    width: 400px;
+    background-color: floralwhite;
+}
