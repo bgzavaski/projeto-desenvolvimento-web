@@ -1,0 +1,49 @@
+body {
+    margin: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: whitesmoke;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    margin-top: 80px;
+}
+
+header h1 {
+    font-size: 4rem;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+}
+
+input[type="text"],
+button {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.adicionar-tarefa {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+}
+.concluida {
+    text-decoration: line-through;
+}
